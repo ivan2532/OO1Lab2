@@ -18,15 +18,21 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Buket.cpp">
+    <ClCompile Include="Bouquet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FlowerShop.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Cvet.h">
+    <ClInclude Include="Flower.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Buket.h">
+    <ClInclude Include="Bouquet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FlowerShop.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

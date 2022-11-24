@@ -127,11 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Buket.h" />
-    <ClInclude Include="Cvet.h" />
+    <ClInclude Include="Bouquet.h" />
+    <ClInclude Include="FlowerShop.h" />
+    <ClInclude Include="Flower.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Buket.cpp" />
+    <ClCompile Include="Bouquet.cpp" />
+    <ClCompile Include="FlowerShop.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

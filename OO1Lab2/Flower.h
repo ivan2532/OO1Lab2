@@ -4,10 +4,10 @@
 #include <iostream>
 #include <string>
 
-class Cvet
+class Flower
 {
 public:
-	Cvet(const std::string& name, int buyPrice, int sellPrice)
+	Flower(const std::string& name, int buyPrice, int sellPrice)
 		:
 		m_Name(name),
 		m_BuyPrice(buyPrice),
@@ -20,14 +20,14 @@ public:
 	int GetSellPrice() const { return m_SellPrice; }
 	int GetProfit() { return m_SellPrice - m_BuyPrice; }
 
-	bool operator ==(const Cvet& rhs) const
+	bool operator ==(const Flower& rhs) const
 	{
 		return m_Name == rhs.m_Name;
 	}
 
-	friend std::ostream& operator<<(std::ostream& ostream, const Cvet& cvet)
+	friend std::ostream& operator<<(std::ostream& ostream, const Flower& rhs)
 	{
-		return ostream << cvet.m_Name;
+		return ostream << rhs.m_Name;
 	}
 
 private:
