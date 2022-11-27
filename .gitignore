@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+/.vs/OO1Lab2
+/OO1Lab2/x64/Debug
+/V2/x64/Debug
+/x64/Debug
