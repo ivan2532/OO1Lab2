@@ -24,15 +24,18 @@ FlowerShop& FlowerShop::operator=(const FlowerShop& rhs)
 
 FlowerShop::FlowerShop(FlowerShop&& value) noexcept
 {
-	*this = value;
+	*this = std::move(value);
 }
 
 FlowerShop& FlowerShop::operator=(FlowerShop&& rhs) noexcept
 {
-	FreeBouquetList();
-	m_Earnings = rhs.m_Earnings;
-	m_BouquetList = rhs.m_BouquetList;
-	rhs.m_BouquetList = nullptr;
+	if (this != &rhs)
+	{
+		FreeBouquetList();
+		m_Earnings = rhs.m_Earnings;
+		m_BouquetList = rhs.m_BouquetList;
+		rhs.m_BouquetList = nullptr;
+	}
 
 	return *this;
 }

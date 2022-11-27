@@ -21,14 +21,17 @@ Bouquet& Bouquet::operator=(const Bouquet& rhs)
 
 Bouquet::Bouquet(Bouquet&& value) noexcept
 {
-	*this = value;
+	*this = std::move(value);
 }
 
 Bouquet& Bouquet::operator=(Bouquet&& rhs) noexcept
 {
-	FreeFlowerList();
-	m_FlowerList = rhs.m_FlowerList;
-	rhs.m_FlowerList = nullptr;
+	if (this != &rhs)
+	{
+		FreeFlowerList();
+		m_FlowerList = rhs.m_FlowerList;
+		rhs.m_FlowerList = nullptr;
+	}
 
 	return *this;
 }

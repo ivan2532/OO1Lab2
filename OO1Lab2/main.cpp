@@ -1,10 +1,6 @@
 #include "FlowerShop.h"
 
-#define _CRTDBG_MAP_ALLOC
-#include <stdlib.h>
-#include <crtdbg.h>
-
-void TestFunction()
+int main()
 {
 	Flower a_Original("Maslacak", 10, 15);
 	Flower b_Old("Tulipan", 50, 70);
@@ -116,12 +112,6 @@ void TestFunction()
 	std::cout << std::endl;
 	std::cout << std::endl;
 	std::cout << shop1;
-}
 
-int main()
-{
-	TestFunction();
-
-	_CrtDumpMemoryLeaks();
 	return 0;
 }
