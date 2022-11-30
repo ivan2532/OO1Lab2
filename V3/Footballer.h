@@ -18,8 +18,8 @@ public:
 	Footballer(const std::string& name, const std::string& team, Position position);
 	Footballer(const Footballer&) = delete;
 
-	std::string GetName() const { return m_Name; }
-	std::string GetTeam() const { return m_Team; }
+	const std::string& GetName() const { return m_Name; }
+	const std::string& GetTeam() const { return m_Team; }
 
 	Position GetPosition() const { return m_Position; }
 	void SetPosition(Position value) { m_Position = value; }

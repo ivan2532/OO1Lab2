@@ -15,7 +15,7 @@ public:
 	{
 	}
 
-	std::string GetName() const { return m_Name; }
+	const std::string& GetName() const { return m_Name; }
 	int GetBuyPrice() const { return m_BuyPrice; }
 	int GetSellPrice() const { return m_SellPrice; }
 	int GetProfit() { return m_SellPrice - m_BuyPrice; }

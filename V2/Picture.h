@@ -21,7 +21,7 @@ private:
 
 public:
 	int GetNumber() const { return m_Number; }
-	std::string GetName() const { return m_Name; }
+	const std::string& GetName() const { return m_Name; }
 	int GetID() const { return m_ID; }
 
 	friend std::ostream& operator<<(std::ostream& ostream, const Picture& rhs)
