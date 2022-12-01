@@ -27,6 +27,9 @@ public:
 	int GetProfit() const;
 	
 	bool operator>(const Bouquet& rhs) const;
+	bool operator<(const Bouquet& rhs) const;
+	bool operator>=(const Bouquet& rhs) const;
+	bool operator<=(const Bouquet& rhs) const;
 	friend std::ostream& operator<<(std::ostream& ostream, const Bouquet& rhs);
 private:
 	void FreeFlowerList();

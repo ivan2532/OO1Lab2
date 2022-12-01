@@ -25,6 +25,11 @@ public:
 		return m_Name == rhs.m_Name;
 	}
 
+	bool operator !=(const Flower& rhs) const
+	{
+		return !(*this == rhs);
+	}
+
 	friend std::ostream& operator<<(std::ostream& ostream, const Flower& rhs)
 	{
 		return ostream << rhs.m_Name;

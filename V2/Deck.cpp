@@ -118,6 +118,9 @@ Picture* Deck::TakePicture(int number)
 		it = it->next;
 	}
 
+	if (result == nullptr)
+		return nullptr;
+
 	if (prev == nullptr)
 		m_PictureList = it->next;
 	else

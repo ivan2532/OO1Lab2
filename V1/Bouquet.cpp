@@ -96,6 +96,21 @@ bool Bouquet::operator>(const Bouquet& rhs) const
 	return GetSellPrice() > rhs.GetSellPrice();
 }
 
+bool Bouquet::operator<(const Bouquet& rhs) const
+{
+	return GetSellPrice() < rhs.GetSellPrice();
+}
+
+bool Bouquet::operator>=(const Bouquet& rhs) const
+{
+	return GetSellPrice() >= rhs.GetSellPrice();
+}
+
+bool Bouquet::operator<=(const Bouquet& rhs) const
+{
+	return GetSellPrice() <= rhs.GetSellPrice();
+}
+
 void Bouquet::FreeFlowerList()
 {
 	auto it = m_FlowerList;
